@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Sparkles } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
+import heroBg from "@/assets/carpet-hero.jpg";
 
 const Hero = () => {
   return (
@@ -12,7 +12,7 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
         <img
           src={heroBg}
-          alt="Roqi Style Fashion"
+          alt="Roqi Style Carpets"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-overlay-gradient"></div>
@@ -28,13 +28,13 @@ const Hero = () => {
 
           {/* Main Heading */}
           <h1 className="font-playfair text-5xl md:text-7xl lg:text-8xl font-bold text-primary-foreground mb-6 leading-tight">
-            أناقة تحكي
-            <span className="block text-secondary mt-2">قصتك</span>
+            سجاد فاخر
+            <span className="block text-secondary mt-2">يزيّن منزلك</span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-lg md:text-xl text-primary-foreground/80 mb-10 max-w-2xl mx-auto font-poppins">
-            اكتشفي مجموعتنا الحصرية من الأزياء الراقية حيث يلتقي التصميم العصري بالأناقة الخالدة
+            اكتشف مجموعتنا الحصرية من السجاد والأرضيات الفاخرة بتصاميم أصيلة وجودة لا تُضاهى
           </p>
 
           {/* CTA Buttons */}

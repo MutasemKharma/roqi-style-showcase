@@ -101,7 +101,7 @@ const Contact = () => {
               انضمي إلى عائلة Roqi Style
             </h3>
             <p className="text-primary-foreground/90 mb-8">
-              تابعينا على انستجرام للحصول على آخر التصاميم والعروض الحصرية
+              تابعنا على انستجرام لمشاهدة أحدث تشكيلاتنا من السجاد الفاخر والعروض الحصرية
             </p>
             <div className="space-y-4">
               <Button

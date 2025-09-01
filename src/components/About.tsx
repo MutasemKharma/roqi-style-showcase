@@ -1,21 +1,26 @@
-import { Sparkles, Heart, Award, Users } from "lucide-react";
+import { Sparkles, Heart, Award, Users, Palette } from "lucide-react";
 
 const About = () => {
   const features = [
     {
-      icon: <Heart className="h-6 w-6" />,
-      title: "شغف بالتفاصيل",
-      description: "نهتم بأدق التفاصيل لنقدم لك قطعاً استثنائية",
+      icon: <Palette className="h-6 w-6" />,
+      title: "تصاميم حصرية",
+      description: "نقوش وألوان مختارة بعناية تناسب كل ذوق",
     },
     {
       icon: <Award className="h-6 w-6" />,
-      title: "جودة لا تضاهى",
-      description: "نختار أجود الخامات لضمان أناقة تدوم",
+      title: "جودة استثنائية",
+      description: "سجاد مصنوع من أجود الخامات لضمان المتانة والأناقة",
+    },
+    {
+      icon: <Heart className="h-6 w-6" />,
+      title: "خدمة متميزة",
+      description: "نساعدك في اختيار السجاد المناسب لمساحتك",
     },
     {
       icon: <Users className="h-6 w-6" />,
-      title: "تصميم حصري",
-      description: "قطع محدودة الإصدار لتميزك الخاص",
+      title: "ثقة العملاء",
+      description: "آلاف العملاء الراضين عن منتجاتنا وخدماتنا",
     },
   ];
 
@@ -33,36 +38,37 @@ const About = () => {
             </div>
 
             <h2 className="font-playfair text-4xl md:text-5xl font-bold text-primary mb-6">
-              حيث تلتقي الأناقة
-              <span className="block text-accent mt-2">بالإبداع</span>
+              خبرة تمتد لسنوات
+              <span className="block text-accent mt-2">في عالم السجاد الفاخر</span>
             </h2>
 
             <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
-              في Roqi Style، نؤمن بأن الأزياء ليست مجرد ملابس، بل هي تعبير عن الشخصية
-              والذوق الرفيع. منذ انطلاقتنا، حرصنا على تقديم تصاميم تجمع بين الأصالة
-              والعصرية، مع الاهتمام بأدق التفاصيل.
+              في Roqi Style، نفخر بتقديم أجود أنواع السجاد والأرضيات الفاخرة. 
+              نحرص على انتقاء كل قطعة بعناية فائقة لنضمن لك الحصول على سجاد 
+              يجمع بين الجمال والجودة والمتانة.
             </p>
 
             <p className="text-muted-foreground mb-8">
-              نختار قطعنا بعناية فائقة، ونعمل مع أمهر الحرفيين لنقدم لك تجربة تسوق
-              فريدة تليق بذوقك الراقي.
+              مع خبرة تمتد لسنوات في مجال السجاد، نقدم لعملائنا تشكيلة واسعة 
+              من التصاميم الكلاسيكية والعصرية التي تناسب جميع الأذواق وتضفي 
+              لمسة من الفخامة على أي مساحة.
             </p>
 
             {/* Features */}
-            <div className="space-y-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {features.map((feature, index) => (
                 <div
                   key={index}
-                  className="flex items-start gap-4 p-4 rounded-lg bg-background shadow-sm hover:shadow-elegant transition-shadow duration-300"
+                  className="flex items-start gap-3 p-4 rounded-lg bg-background shadow-sm hover:shadow-elegant transition-shadow duration-300"
                 >
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center text-secondary">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center text-secondary">
                     {feature.icon}
                   </div>
                   <div>
-                    <h3 className="font-poppins font-semibold text-primary mb-1">
+                    <h3 className="font-poppins font-semibold text-primary mb-1 text-sm">
                       {feature.title}
                     </h3>
-                    <p className="text-muted-foreground text-sm">
+                    <p className="text-muted-foreground text-xs">
                       {feature.description}
                     </p>
                   </div>
@@ -82,24 +88,37 @@ const About = () => {
                   <div className="grid grid-cols-2 gap-4">
                     <div className="text-center p-4 bg-muted/50 rounded-lg">
                       <p className="font-playfair text-3xl font-bold text-secondary">
-                        500+
+                        1000+
                       </p>
-                      <p className="text-muted-foreground text-sm">قطعة مميزة</p>
+                      <p className="text-muted-foreground text-sm">منتج مميز</p>
                     </div>
                     <div className="text-center p-4 bg-muted/50 rounded-lg">
                       <p className="font-playfair text-3xl font-bold text-accent">
-                        1000+
+                        5000+
                       </p>
-                      <p className="text-muted-foreground text-sm">عميلة سعيدة</p>
+                      <p className="text-muted-foreground text-sm">عميل راضٍ</p>
                     </div>
                   </div>
 
-                  {/* Quote */}
+                  {/* Services */}
                   <div className="p-6 bg-primary/5 rounded-lg border-r-4 border-secondary">
-                    <p className="font-playfair text-lg text-primary italic">
-                      "الأناقة ليست في ما ترتدين، بل في كيفية ارتدائه"
+                    <h3 className="font-poppins font-semibold text-primary mb-3">
+                      خدماتنا المميزة
+                    </h3>
+                    <ul className="space-y-2 text-muted-foreground text-sm">
+                      <li>• توصيل مجاني للطلبات الكبيرة</li>
+                      <li>• استشارات مجانية لاختيار السجاد المناسب</li>
+                      <li>• ضمان على جميع المنتجات</li>
+                      <li>• خدمة التركيب المتخصصة</li>
+                    </ul>
+                  </div>
+
+                  {/* Quote */}
+                  <div className="p-4 bg-gold-gradient rounded-lg">
+                    <p className="font-playfair text-primary-foreground italic">
+                      "السجاد الفاخر ليس مجرد أرضية، بل لوحة فنية تحت أقدامك"
                     </p>
-                    <p className="text-muted-foreground text-sm mt-2">- Roqi Style</p>
+                    <p className="text-primary-foreground/80 text-sm mt-2">- Roqi Style</p>
                   </div>
                 </div>
               </div>

@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="text-center">
           <h3 className="font-playfair text-2xl font-bold mb-4">Roqi Style</h3>
           <p className="text-primary-foreground/80 mb-4">
-            حيث تلتقي الأناقة بالإبداع
+            سجاد فاخر يضفي الأناقة على منزلك
           </p>
           <div className="flex items-center justify-center gap-1 text-sm text-primary-foreground/60">
             <span>صُنع بـ</span>

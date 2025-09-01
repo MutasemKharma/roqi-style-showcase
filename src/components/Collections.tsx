@@ -1,10 +1,9 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import collection1 from "@/assets/collection-1.jpg";
-import collection2 from "@/assets/collection-2.jpg";
-import collection3 from "@/assets/collection-3.jpg";
+import carpetBlack from "@/assets/carpet-black.jpg";
+import carpetRed from "@/assets/carpet-red.jpg";
+import carpetBlue from "@/assets/carpet-blue.jpg";
 
 const Collections = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -12,24 +11,27 @@ const Collections = () => {
   const collections = [
     {
       id: 1,
-      title: "الأكسسوارات الفاخرة",
-      subtitle: "مجوهرات ذهبية راقية",
-      image: collection1,
-      description: "تشكيلة حصرية من الأكسسوارات المصممة بعناية",
+      title: "السجاد الكلاسيكي",
+      subtitle: "تصاميم فارسية أصيلة",
+      image: carpetBlack,
+      description: "سجاد بنقوش ذهبية فخمة على خلفية سوداء أنيقة",
+      price: "يبدأ من 2,500 ريال",
     },
     {
       id: 2,
-      title: "الأزياء العربية العصرية",
-      subtitle: "عباءات بلمسة عصرية",
-      image: collection2,
-      description: "تصاميم تجمع بين الأصالة والحداثة",
+      title: "السجاد الأحمر الملكي",
+      subtitle: "أناقة لا تُضاهى",
+      image: carpetRed,
+      description: "سجاد أحمر فاخر بتصاميم تقليدية عريقة",
+      price: "يبدأ من 3,000 ريال",
     },
     {
       id: 3,
-      title: "أزياء السهرة",
-      subtitle: "فساتين راقية للمناسبات",
-      image: collection3,
-      description: "إطلالات ساحرة لأمسياتك المميزة",
+      title: "السجاد الأزرق الفاخر",
+      subtitle: "لمسة من الرقي",
+      image: carpetBlue,
+      description: "سجاد بدرجات الأزرق الملكي مع زخارف ذهبية",
+      price: "يبدأ من 2,800 ريال",
     },
   ];
 
@@ -42,7 +44,7 @@ const Collections = () => {
             مجموعاتنا المميزة
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            اكتشفي تشكيلتنا المنتقاة بعناية من أرقى التصاميم
+            تشكيلة منتقاة بعناية من أجود أنواع السجاد والأرضيات الفاخرة
           </p>
         </div>
 
@@ -79,18 +81,19 @@ const Collections = () => {
                       hoveredIndex === index ? "max-h-20 opacity-100" : "max-h-0 opacity-0"
                     }`}
                   >
-                    <p className="text-sm mb-4">{collection.description}</p>
+                    <p className="text-sm mb-2">{collection.description}</p>
+                    <p className="text-lg font-bold text-secondary">{collection.price}</p>
                   </div>
 
                   {/* CTA Button */}
                   <Button
                     variant="hero"
                     size="sm"
-                    className={`self-start transition-all duration-500 ${
+                    className={`self-start transition-all duration-500 mt-2 ${
                       hoveredIndex === index ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
                     }`}
                   >
-                    استكشف المجموعة
+                    عرض التفاصيل
                     <ArrowRight className="h-4 w-4 mr-2 rotate-180" />
                   </Button>
                 </div>
@@ -102,7 +105,7 @@ const Collections = () => {
         {/* View All Button */}
         <div className="text-center mt-12">
           <Button variant="gold" size="lg" className="px-8">
-            عرض جميع المجموعات
+            عرض جميع المنتجات
           </Button>
         </div>
       </div>
