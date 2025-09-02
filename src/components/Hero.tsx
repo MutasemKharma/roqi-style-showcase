@@ -28,13 +28,13 @@ const Hero = () => {
 
           {/* Main Heading */}
           <h1 className="font-playfair text-5xl md:text-7xl lg:text-8xl font-bold text-primary-foreground mb-6 leading-tight">
-            سجاد فاخر
-            <span className="block text-secondary mt-2">يزيّن منزلك</span>
+            دعاسات سيارة فاخرة
+            <span className="block text-secondary mt-2">بتطريز يدوي أصيل</span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-lg md:text-xl text-primary-foreground/80 mb-10 max-w-2xl mx-auto font-poppins">
-            اكتشف مجموعتنا الحصرية من السجاد والأرضيات الفاخرة بتصاميم أصيلة وجودة لا تُضاهى
+            اكتشف مجموعتنا الحصرية من دعاسات السيارات المطرزة بنفس جودة وفخامة سجاد المنزل
           </p>
 
           {/* CTA Buttons */}

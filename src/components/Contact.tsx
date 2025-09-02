@@ -1,7 +1,12 @@
-import { Instagram, MapPin, Phone, Mail, Clock } from "lucide-react";
+import { Instagram, MapPin, Phone, Mail, Clock, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { useState } from "react";
 
 const Contact = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  
   const contactInfo = [
     {
       icon: <Instagram className="h-5 w-5" />,
@@ -95,32 +100,68 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Call to Action */}
-          <div className="bg-gold-gradient rounded-lg p-8 md:p-12 text-center flex flex-col justify-center">
+          {/* Contact Form */}
+          <div className="bg-gold-gradient rounded-lg p-8 md:p-12">
             <h3 className="font-playfair text-3xl font-bold text-primary-foreground mb-4">
-              انضمي إلى عائلة Roqi Style
+              اطلبي دعاساتك المطرزة الآن
             </h3>
             <p className="text-primary-foreground/90 mb-8">
-              تابعنا على انستجرام لمشاهدة أحدث تشكيلاتنا من السجاد الفاخر والعروض الحصرية
+              اتصلي بنا للحصول على دعاسات سيارة مطرزة بتصاميم فاخرة تناسب ذوقك
             </p>
-            <div className="space-y-4">
+            
+            <form 
+              action="https://formspree.io/f/xqadlnyo" 
+              method="POST"
+              className="space-y-4"
+              onSubmit={(e) => {
+                setIsSubmitting(true);
+                setTimeout(() => setIsSubmitting(false), 3000);
+              }}
+            >
+              <Input
+                name="name"
+                type="text"
+                placeholder="الاسم الكامل"
+                required
+                className="bg-primary-foreground/10 border-primary-foreground/30 text-primary-foreground placeholder:text-primary-foreground/60"
+              />
+              <Input
+                name="phone"
+                type="tel"
+                placeholder="رقم الهاتف"
+                required
+                className="bg-primary-foreground/10 border-primary-foreground/30 text-primary-foreground placeholder:text-primary-foreground/60"
+              />
+              <Input
+                name="email"
+                type="email"
+                placeholder="البريد الإلكتروني (اختياري)"
+                className="bg-primary-foreground/10 border-primary-foreground/30 text-primary-foreground placeholder:text-primary-foreground/60"
+              />
+              <Textarea
+                name="message"
+                placeholder="نوع السيارة والتصميم المطلوب..."
+                rows={4}
+                required
+                className="bg-primary-foreground/10 border-primary-foreground/30 text-primary-foreground placeholder:text-primary-foreground/60"
+              />
               <Button
+                type="submit"
                 variant="hero"
                 size="lg"
                 className="w-full bg-primary-foreground/10 hover:bg-primary-foreground/20"
-                onClick={() => window.open("https://www.instagram.com/roqi_style", "_blank")}
+                disabled={isSubmitting}
               >
-                <Instagram className="h-5 w-5 ml-2" />
-                تابعنا على انستجرام
+                {isSubmitting ? (
+                  "جاري الإرسال..."
+                ) : (
+                  <>
+                    <Send className="h-5 w-5 ml-2" />
+                    إرسال الطلب
+                  </>
+                )}
               </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                className="w-full border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
-              >
-                احجزي موعد استشارة
-              </Button>
-            </div>
+            </form>
 
             {/* Social Proof */}
             <div className="mt-8 pt-8 border-t border-primary-foreground/20">

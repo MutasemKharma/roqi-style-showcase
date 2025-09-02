@@ -5,17 +5,17 @@ const About = () => {
     {
       icon: <Palette className="h-6 w-6" />,
       title: "تصاميم حصرية",
-      description: "نقوش وألوان مختارة بعناية تناسب كل ذوق",
+      description: "تطريز يدوي فاخر بنقوش عربية أصيلة",
     },
     {
       icon: <Award className="h-6 w-6" />,
       title: "جودة استثنائية",
-      description: "سجاد مصنوع من أجود الخامات لضمان المتانة والأناقة",
+      description: "دعاسات مصنوعة من أجود الخامات لضمان المتانة والأناقة",
     },
     {
       icon: <Heart className="h-6 w-6" />,
       title: "خدمة متميزة",
-      description: "نساعدك في اختيار السجاد المناسب لمساحتك",
+      description: "نساعدك في اختيار التصميم المناسب لسيارتك",
     },
     {
       icon: <Users className="h-6 w-6" />,
@@ -39,19 +39,19 @@ const About = () => {
 
             <h2 className="font-playfair text-4xl md:text-5xl font-bold text-primary mb-6">
               خبرة تمتد لسنوات
-              <span className="block text-accent mt-2">في عالم السجاد الفاخر</span>
+              <span className="block text-accent mt-2">في عالم التطريز الفاخر</span>
             </h2>
 
             <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
-              في Roqi Style، نفخر بتقديم أجود أنواع السجاد والأرضيات الفاخرة. 
-              نحرص على انتقاء كل قطعة بعناية فائقة لنضمن لك الحصول على سجاد 
-              يجمع بين الجمال والجودة والمتانة.
+              في Roqi Style، نفخر بتقديم دعاسات سيارة فاخرة مطرزة يدوياً بنفس جودة 
+              وإتقان سجاد المنزل الأصيل. نحرص على انتقاء كل خامة بعناية فائقة لنضمن 
+              لك الحصول على دعاسات تجمع بين الجمال والجودة والمتانة.
             </p>
 
             <p className="text-muted-foreground mb-8">
-              مع خبرة تمتد لسنوات في مجال السجاد، نقدم لعملائنا تشكيلة واسعة 
-              من التصاميم الكلاسيكية والعصرية التي تناسب جميع الأذواق وتضفي 
-              لمسة من الفخامة على أي مساحة.
+              مع خبرة تمتد لسنوات في مجال التطريز اليدوي، نقدم لعملائنا تشكيلة واسعة 
+              من التصاميم الكلاسيكية والعصرية التي تناسب جميع أنواع السيارات وتضفي 
+              لمسة من الفخامة والأناقة على سيارتك.
             </p>
 
             {/* Features */}
@@ -107,16 +107,16 @@ const About = () => {
                     </h3>
                     <ul className="space-y-2 text-muted-foreground text-sm">
                       <li>• توصيل مجاني للطلبات الكبيرة</li>
-                      <li>• استشارات مجانية لاختيار السجاد المناسب</li>
+                      <li>• استشارات مجانية لاختيار التصميم المناسب</li>
                       <li>• ضمان على جميع المنتجات</li>
-                      <li>• خدمة التركيب المتخصصة</li>
+                      <li>• تصاميم حسب الطلب</li>
                     </ul>
                   </div>
 
                   {/* Quote */}
                   <div className="p-4 bg-gold-gradient rounded-lg">
                     <p className="font-playfair text-primary-foreground italic">
-                      "السجاد الفاخر ليس مجرد أرضية، بل لوحة فنية تحت أقدامك"
+                      "دعاسات السيارة الفاخرة ليست مجرد حماية، بل لوحة فنية في سيارتك"
                     </p>
                     <p className="text-primary-foreground/80 text-sm mt-2">- Roqi Style</p>
                   </div>
