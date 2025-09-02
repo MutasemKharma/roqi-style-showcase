@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Instagram, ShoppingBag } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import roqiLogo from "@/assets/roqi-logo.jpg";
+import roqiLogo from "@/assets/roqi-logo-new.jpg";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);

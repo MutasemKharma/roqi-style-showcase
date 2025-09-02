@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Sparkles } from "lucide-react";
-import heroBg from "@/assets/carpet-hero.jpg";
+import heroBg from "@/assets/car-mat-hero.jpg";
 
 const Hero = () => {
   return (
@@ -12,7 +12,7 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
         <img
           src={heroBg}
-          alt="Roqi Style Carpets"
+          alt="Roqi Style Car Mats"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-overlay-gradient"></div>

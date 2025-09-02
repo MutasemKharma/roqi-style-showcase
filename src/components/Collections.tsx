@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import carpetBlack from "@/assets/carpet-black.jpg";
-import carpetRed from "@/assets/carpet-red.jpg";
-import carpetBlue from "@/assets/carpet-blue.jpg";
+import carpetBlack from "@/assets/car-mat-black.jpg";
+import carpetRed from "@/assets/car-mat-red.jpg";
+import carpetBlue from "@/assets/car-mat-blue.jpg";
 
 const Collections = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -44,7 +44,7 @@ const Collections = () => {
             مجموعاتنا المميزة
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            تشكيلة منتقاة بعناية من أجود أنواع السجاد والأرضيات الفاخرة
+            تشكيلة منتقاة بعناية من دعاسات السيارات المطرزة يدوياً بأرقى التصاميم
           </p>
         </div>
 
