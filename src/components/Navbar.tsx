@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Instagram, ShoppingBag } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import roqiLogo from "@/assets/roqi-logo.jpg";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -31,9 +32,16 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center">
-            <h1 className="font-playfair text-2xl md:text-3xl font-bold text-primary">
-              Roqi Style
-            </h1>
+            <a href="#home" className="flex items-center gap-3 hover:opacity-90 transition-opacity duration-300">
+              <img 
+                src={roqiLogo} 
+                alt="Roqi Style" 
+                className="h-12 w-12 rounded-full object-cover shadow-elegant"
+              />
+              <h1 className="font-playfair text-2xl md:text-3xl font-bold text-primary">
+                Roqi Style
+              </h1>
+            </a>
           </div>
 
           {/* Desktop Navigation */}
