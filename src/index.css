@@ -46,7 +46,7 @@ All colors MUST be HSL.
     /* Custom Design Tokens */
     --gold-gradient: linear-gradient(135deg, hsl(40 65% 58%), hsl(40 70% 65%));
     --rose-gradient: linear-gradient(135deg, hsl(350 35% 65%), hsl(350 40% 70%));
-    --overlay-gradient: linear-gradient(180deg, hsl(0 0% 0% / 0), hsl(0 0% 0% / 0.6));
+    --overlay-gradient: linear-gradient(180deg, hsl(0 0% 0% / 0.4), hsl(0 0% 0% / 0.9));
     --shadow-elegant: 0 10px 40px -10px hsl(0 0% 0% / 0.2);
     --shadow-gold: 0 0 30px hsl(40 65% 58% / 0.2);
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
